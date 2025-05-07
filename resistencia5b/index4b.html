@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronica fácil</title>
+    <link rel="stylesheet" href="style4b.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h2>Calculadora de código de resistencia de 4 bandas</h2>
+    <main>
+        <div class="display">
+                 <p>El valor de tu resistencia es:</p>
+                 <h1 id="texDisplay">000000000-ohm</h1>
+       </div>
+        <div class="container">
+            <div class="resistencia">
+                  <!--esto es para el dibujo de la resistencias-->
+                <div class="palito"></div>
+                <div class="cuerpo"></div>
+                <div class="bochita"></div>
+                <div class="bochita-r"></div>
+                
+                <div class="bandas">
+                   
+                        <div class="banda banda-1" id="banda-1"> </div>
+                        <div class="banda banda-2" id="banda-2" > </div>
+                        <div class="banda banda-3" id="banda-3" > </div>
+                        <div class="banda banda-4" id="banda-4" > </div>
+                        <div class="banda banda-5" id="banda-5" > </div>
+                    </div>
+                   
+                </div>
+                 <!--esto es para seleccionar el color por bandas de la resistencias-->
+                <div class="seleccionar-color">
+                    <select id="seleccionador1" name="select" class="seleccionador">
+                      <option class="elgir-color"   selected >elegir color </option>
+                        <option class="negro" id="0" value= 0  >negro </option>
+                        <option class="marron" id="1" value=1 > marron</option>
+                        <option class="rojo" id="2" value=2>rojo</option>
+                        <option class="naranja" id="3" value=3>naranja</option>
+                        <option class="amarillo" id="4" value=4>amarrillo</option>
+                        <option class="verde" id="5" value=5>verde</option>
+                        <option class="azul" id="6" value=6>azul</option>
+                        <option class="violeta" id="7" value=7>violeta</option>
+                        <option class="gris" id="8" value=8>gris</option>
+                        <option class="blanco" id="9" value=9>blanco</option>
+                      </select>
+                      
+                      <select id="seleccionador2" name="select" class="seleccionador">
+                        <option class="elgir-color"   selected >elegir color </option>
+                        <option class="negro" id="0" value=0  >negro </option>
+                        <option class="marron" id="1" value=1 > marron</option>
+                        <option class="rojo" id="2" value=2>rojo</option>
+                        <option class="naranja" id="3" value=3>naranja</option>
+                        <option class="amarillo" id="4" value=4>amarrillo</option>
+                        <option class="verde" id="5" value=5>verde</option>
+                        <option class="azul" id="6" value=6 >azul</option>
+                        <option class="violeta" id="7" value= 7 >violeta</option>
+                        <option class="gris" id="8" value= 8 >gris</option>
+                        <option class="blanco" id="9" value= 9 >blanco</option>
+                      </select>
+                      <select id="seleccionador3" name="select" class="seleccionador">
+                        <option class="elgir-color"   selected >elegir color </option>
+                        <option class="negro" id="0" value= 0  >negro </option>
+                        <option class="marron" id="1" value=1 > marron</option>
+                        <option class="rojo" id="2" value=2 >rojo</option>
+                        <option class="naranja" id="3" value=3 >naranja</option>
+                        <option class="amarillo" id="4" value=4 >amarrillo</option>
+                        <option class="verde" id="5" value=5 >verde</option>
+                        <option class="azul" id="6" value=6>azul</option>
+                        <option class="violeta" id="7" value=7>violeta</option>
+                        <option class="gris" id="8" value=8 >gris</option>
+                        <option class="blanco" id="9" value=9>blanco</option>
+                      </select>
+                      <select id="seleccionador4" name="select" class="seleccionador">
+                        <option class="elgir-color"  value=0 selected >elegir color </option>
+                        <option class="negro" id="0" value=0 >negro </option>
+                        <option class="marron" id="1" value=1 > marron</option>
+                        <option class="rojo" id="2" value=2>rojo</option>
+                        <option class="naranja" id="3" value=3>naranja</option>
+                        <option class="amarillo" id="4" value=4>amarrillo</option>
+                        <option class="verde" id="5" value=5>verde</option>
+                        <option class="azul" id="6" value=6>azul</option>
+                        <option class="violeta" id="7" value=7>violeta</option>
+                        <option class="gris" id="8" value=8>gris</option>
+                        <option class="blanco" id="9" value=9>blanco</option>
+                        <option class="dorado" id="10" value=10>dorado</option>
+                        <option class="plata" id="11" value=11>plata</option>
+                      </select>
+
+                      <select id="seleccionador5" name="select" class="seleccionador">
+                        <option class="elgir-color"  value=0 selected >elegir color </option>
+                        <option class="negro" id="0" value=0 >negro </option>
+                        <option class="marron" id="1" value=1 > marron</option>
+                        <option class="rojo" id="2" value=2>rojo</option>
+                        <option class="naranja" id="3" value=3>naranja</option>
+                        <option class="amarillo" id="4" value=4>amarrillo</option>
+                        <option class="verde" id="5" value=5>verde</option>
+                        <option class="azul" id="6" value=6>azul</option>
+                        <option class="violeta" id="7" value=7>violeta</option>
+                        <option class="gris" id="8" value=8>gris</option>
+                        <option class="blanco" id="9" value=9>blanco</option>
+                        <option class="dorado" id="10" value=10>dorado</option>
+                        <option class="plata" id="11" value=11>plata</option>
+                      </select>
+                </div>
+               
+            </div>
+       </div>
+    </main>
+    <div class="boxBotones">
+      <button class="botonCalcular" id="botonCalcularId">calcular valor de la resistencia</button>
+      <a href="../resistenciaWeb-master/index.html">
+        <button class="botonIndex"> R de 4 bandas </button>
+      </a>
+     
+    </div>
+
+    <footer class="footer">
+        <div class="boxIconoGitHub"> <a href="https://github.com/sebasnain">
+          <img class="iconoGitHub" src="../resistencia5b/img4b/github.png" alt="icono-git-hub">
+        </a> </div>
+        <h4 class="textoFooter"> Sebastian Nain / <a href="https://inset.edu.ar/sedes/pico-truncado/">InSET</a> </h4>
+        
+    </footer>
+</body>
+<script src="app4b.js"></script>
+</html>
